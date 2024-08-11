@@ -1,6 +1,3 @@
-# web-application-login-automation
-
-
 # Web Application Login Automation
 
 ## Overview
