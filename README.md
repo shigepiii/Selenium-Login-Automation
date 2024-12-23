@@ -88,7 +88,8 @@ login_test.py を開き、URL、username、password 変数に自分のウェブ�
 
 3. Check the test results in the terminal（結果をターミナルで確認します）。
 
-4. 
+
+
    
 
 
