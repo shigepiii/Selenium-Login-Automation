@@ -59,13 +59,13 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 import time
 
-# Configure WebDriver（WebDriverの設定）
+#Configure WebDriver（WebDriverの設定）
 driver = webdriver.Chrome()  # Or use webdriver.Firefox() for Firefox
 
-# Navigate to the login page（ログインページに移動）
+#Navigate to the login page（ログインページに移動）
 driver.get("https://example.com/login")
 
-# Locate and fill in the login form（ログインフォームを特定し、情報を入力）
+#Locate and fill in the login form（ログインフォームを特定し、情報を入力）
 username_input = driver.find_element(By.NAME, "username")
 password_input = driver.find_element(By.NAME, "password")
 login_button = driver.find_element(By.NAME, "login")
@@ -74,14 +74,14 @@ username_input.send_keys("testuser")
 password_input.send_keys("password123")
 login_button.click()
 
-# Wait for the result（結果を待機）
+#Wait for the result（結果を待機）
 time.sleep(5)
 
-# Check for successful login（ログインが成功したか確認）
+#Check for successful login（ログインが成功したか確認）
 if "Welcome" in driver.page_source:
   print("Login successful")
 else:
   print("Login failed")
 
-# Close the browser（ブラウザを閉じる）
+#Close the browser（ブラウザを閉じる）
 driver.quit()
