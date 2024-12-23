@@ -77,6 +77,6 @@ For Windows:
 このコマンドでテストを実行します。
 
 
-3. Check the test results in the terminal（結果をターミナルで確認します）。
+3, Check the test results in the terminal（結果をターミナルで確認します）。
 
 ---
