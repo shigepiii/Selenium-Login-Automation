@@ -79,4 +79,6 @@ For Windows:
 
 3, Check the test results in the terminal（結果をターミナルで確認します）。
 
+For an example of how the script should look, see [example_login_test.py].
+
 ---
