@@ -85,7 +85,6 @@ login_test.py を開き、URL、username、password 変数に自分のウェブ�
 このコマンドでテストを実行します。
 
 
-
 3. Check the test results in the terminal（結果をターミナルで確認します）。
 
 
@@ -95,49 +94,42 @@ login_test.py を開き、URL、username、password 変数に自分のウェブ�
 
 **Example**
 
-Here is an example of how the test script works:
+from selenium import webdriver  # Import WebDriver module
+from selenium.webdriver.common.by import By  # For locating elements by specific criteria
+from selenium.webdriver.common.keys import Keys  # To simulate keyboard inputs
+import time  # To add delays for demonstration purposes
 
+# Configure WebDriver
+driver = webdriver.Chrome()  # Use Chrome WebDriver (Alternatively, you can use Firefox)
+# WebDriverの設定
+# Chromeを使用します（Firefoxを使用する場合はwebdriver.Firefox()を使用）
 
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
-import time
-
-
-**Configure WebDriver（WebDriverの設定）**
-
-driver = webdriver.Chrome()  # Or use webdriver.Firefox() for Firefox
-
-
-**Navigate to the login page（ログインページに移動）**
-
+# Navigate to the login page
 driver.get("https://example.com/login")
+# ログインページに移動
 
+# Locate and fill in the login form
+username_input = driver.find_element(By.NAME, "username")  # Find the username field
+password_input = driver.find_element(By.NAME, "password")  # Find the password field
+login_button = driver.find_element(By.NAME, "login")  # Find the login button
+# ログインフォームを見つけて入力フィールドを特定
 
-**Locate and fill in the login form（ログインフォームを特定し、情報を入力）**
+username_input.send_keys("testuser")  # Input the username
+password_input.send_keys("password123")  # Input the password
+login_button.click()  # Click the login button
+# ユーザー名とパスワードを入力し、ログインボタンをクリック
 
-username_input = driver.find_element(By.NAME, "username")
-password_input = driver.find_element(By.NAME, "password")
-login_button = driver.find_element(By.NAME, "login")
+# Wait for the result
+time.sleep(5)  # Pause to let the page load
+# 結果が表示されるまで5秒待機
 
-
-username_input.send_keys("testuser")
-password_input.send_keys("password123")
-login_button.click()
-
-
-**Wait for the result（結果を待機）**
-
-time.sleep(5)
-
-**Check for successful login（ログインが成功したか確認）**
-
-if "Welcome" in driver.page_source:
+# Check for successful login
+if "Welcome" in driver.page_source:  # Check if "Welcome" is present in the page source
   print("Login successful")
 else:
   print("Login failed")
-  
+# ログイン成功を確認 ("Welcome"がページ内に表示されているかをチェック)
 
-**Close the browser（ブラウザを閉じる）**
-
+# Close the browser
 driver.quit()
+# ブラウザを閉じる
