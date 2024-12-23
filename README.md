@@ -11,6 +11,8 @@ This project demonstrates how to automate the testing of a web application’s l
 
 
 
+
+
 **Features**
 
 ・Automated testing of login functionality（ログイン機能の自動化テスト）
@@ -18,6 +20,8 @@ This project demonstrates how to automate the testing of a web application’s l
 ・Verifies login success and failure scenarios（ログイン成功と失敗シナリオの検証）
 
 ・Supports configuration for different environments（異なる環境向けの設定サポート）
+
+
 
 
 
@@ -36,6 +40,8 @@ Before you begin, ensure you have met the following requirements:
 
 
 
+
+
 **Installation**
 
 1, Clone the repository（リポジトリをクローンします）:
@@ -44,11 +50,13 @@ Before you begin, ensure you have met the following requirements:
  
 このコマンドでリポジトリをローカルにクローンし、プロジェクトディレクトリに移動します。
 
+
 2, Create a virtual environment and activate it（仮想環境を作成し、有効にします）:
 
 bash  python -m venv env  source env/bin/activate  # For Windows: env\Scripts\activate 
 
 仮想環境を作成して有効化します。Windowsではコマンドが異なりますので、注意してください。
+
 
 
 3, Install the required packages（必要なパッケージをインストールします）:
@@ -60,11 +68,14 @@ bash  python -m venv env  source env/bin/activate  # For Windows: env\Scripts\ac
 
 
 
+
+
 **Usage**
 
 1, Open login_test.py and update the URL, username, and password variables with your web application’s login details.
 
 login_test.py を開き、URL、username、password 変数に自分のウェブアプリケーションのログイン情報を入力します。
+
 
 
 2, Run the test script（テストスクリプトを実行します）:
@@ -74,8 +85,11 @@ login_test.py を開き、URL、username、password 変数に自分のウェブ�
 このコマンドでテストを実行します。
 
 
+
 3. Check the test results in the terminal（結果をターミナルで確認します）。
+
 4. 
+   
 
 
 **Example**
