@@ -34,7 +34,7 @@ Before you begin, ensure you have met the following requirements:
 ---
 # Installation
 
-1, Clone the repository（リポジトリをクローンします）:
+**1**, Clone the repository（リポジトリをクローンします）:
 
 ``` bash  git clone https://github.com/yourusername/Selenium-Login-Automation.git```
 
@@ -43,7 +43,7 @@ Before you begin, ensure you have met the following requirements:
 このコマンドでリポジトリをローカルにクローンし、プロジェクトディレクトリに移動します。
 
 
-2, Create a virtual environment and activate it（仮想環境を作成し、有効にします）:
+**2**, Create a virtual environment and activate it（仮想環境を作成し、有効にします）:
 
 ```bash  python -m venv env  source env/bin/activate ```
 
@@ -55,7 +55,7 @@ For Windows:
 
 
 
-3, Install the required packages（必要なパッケージをインストールします）:
+**3**, Install the required packages（必要なパッケージをインストールします）:
 
 ``` bash  pip install -r requirements.txt ```
  
@@ -64,20 +64,23 @@ For Windows:
 ---
 # Usage
 
-**Step 1**    Open login_test.py and update the URL, username, and password variables with your web application’s login details.
+**Step 1**: 
+  Open login_test.py and update the URL, username, and password variables with your web application’s login details.
 
 (login_test.py を開き、URL、username、password 変数に自分のウェブアプリケーションのログイン情報を入力します。)
 
 
 
-**Step 2**    Run the test script（テストスクリプトを実行します）:
+**Step 2**: 
+  Run the test script（テストスクリプトを実行します）:
 
 ``` bash  python login_test.py  ```
  
 このコマンドでテストを実行します。
 
 
-**Step 3**    Check the test results in the terminal（結果をターミナルで確認します）。
+**Step 3**: 
+  Check the test results in the terminal（結果をターミナルで確認します）。
 
 For an example of how the script should look, see [example_login_test.py].
 
@@ -86,9 +89,9 @@ For an example of how the script should look, see [example_login_test.py].
 ---
 
 # Technologies
-- **Python**
-- **Selenium WebDriver**
-- **ChromeDriver**
-- **HTML/CSS**
+- Python
+- Selenium WebDriver
+- ChromeDriver
+- HTML/CSS
 
 ---
