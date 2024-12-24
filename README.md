@@ -64,23 +64,31 @@ For Windows:
 ---
 # Usage
 
-1, Open login_test.py and update the URL, username, and password variables with your web application’s login details.
+**Step 1**    Open login_test.py and update the URL, username, and password variables with your web application’s login details.
 
 (login_test.py を開き、URL、username、password 変数に自分のウェブアプリケーションのログイン情報を入力します。)
 
 
 
-2, Run the test script（テストスクリプトを実行します）:
+**Step 2**    Run the test script（テストスクリプトを実行します）:
 
 ``` bash  python login_test.py  ```
  
 このコマンドでテストを実行します。
 
 
-3, Check the test results in the terminal（結果をターミナルで確認します）。
+**Step 3**    Check the test results in the terminal（結果をターミナルで確認します）。
 
 For an example of how the script should look, see [example_login_test.py].
 
 スクリプトがどのように見えるべきかの例については、[example_login_test.py]をご覧ください。
+
+---
+
+# Technologies
+- **Python**
+- **Selenium WebDriver**
+- **ChromeDriver**
+- **HTML/CSS**
 
 ---
