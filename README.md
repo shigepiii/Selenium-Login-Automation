@@ -1,6 +1,6 @@
 
 
-# Selenium Login Automation
+# ｀Selenium Login Automation｀
 
 # Overview
 
@@ -32,7 +32,7 @@ Before you begin, ensure you have met the following requirements:
 ・WebDriver for your browser (e.g., ChromeDriver or GeckoDriver)（使用するブラウザ用のWebDriver（例: ChromeDriverやGeckoDriver））
 
 ---
-# Installation
+# Setup
 
 **1**, Clone the repository（リポジトリをクローンします）:
 
