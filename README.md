@@ -84,7 +84,7 @@ For Windows:
 
 For an example of how the script should look, see [example_login_test.py].
 
-スクリプトがどのように見えるべきかの例については、[example_login_test.py]をご覧ください。
+このスクリプトの使用例については、[example_login_test.py]をご覧ください。
 
 ---
 
