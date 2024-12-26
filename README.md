@@ -89,9 +89,9 @@ For an example of how the script should look, see [example_login_test.py].
 ---
 
 # Technologies
-- Python
-- Selenium WebDriver
-- ChromeDriver
-- HTML/CSS
+- *Python*
+- *Selenium WebDriver*
+- *ChromeDriver*
+- *HTML/CSS*
 
 ---
